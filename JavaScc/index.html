@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src="js/gallery.js"></script>
+</head>
+<body onload="initializeGallery()">
+	
+	<div id="image">
+		Hover over an image below to display here.
+	</div>
+	
+	<!-- Axolotl Images -->
+	<img class="preview" alt="A pink axolotl facing forward on a dark textured surface" src="img/axolotl.avif" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="A light pink axolotl standing on underwater sand" src="img/axolotl_upclose.webp" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class="preview" alt="Close up of a pink axolotl with glowing purple lighting" src="img/axototl_upclose.webp" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="A dark grey axolotl walking on white sand" src="img/dark_axolotl.webp" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Glass Frog Images -->
+	<img class="preview" alt="A small green glass frog sitting on a bright green leaf" src="img/glass_frog_leaf.webp" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<img class="preview" alt="A green glass frog sitting upright on a mossy branch" src="img/glass_frog_on_grassBranch.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+</body>
+</html>

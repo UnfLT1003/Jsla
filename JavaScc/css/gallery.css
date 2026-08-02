@@ -1,0 +1,49 @@
+/*Name this external file gallery.css*/
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+}
+
+#image {
+    line-height: 650px;
+    width: 575px;
+    height: 650px;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 150%;
+    
+    /* Background fixes */
+    background-size: cover;       
+    background-position: center;  
+    text-shadow: 2px 2px 5px #000000; 
+}
+
+.preview {
+    /* 1. Size adjustments to make them bigger */
+    width: 18%;            /* Increased from 10% */
+    margin-left: 11%;      /* Reduced from 17% to fit 3 per row perfectly */
+    border: 10px solid black;
+    
+    /* Layout fixes for alignment */
+    aspect-ratio: 1 / 1;    
+    object-fit: cover;      
+    margin-bottom: 25px;    
+    vertical-align: top;    
+    
+    /* 2. Fixes to prevent broken images from ruining the layout */
+    display: inline-block; /* Forces the item to strictly obey width/height */
+    overflow: hidden;      /* Prevents long alt text from spilling out of the box */
+    background-color: #444444; /* Gives a solid grey box if the image is missing */
+    color: #ffffff;        /* Makes the alt text white so it is readable on the grey box */
+}
+
+img {
+    width: 95%;
+}
